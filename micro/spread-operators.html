@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The ...Spread Operator</title>
+</head>
+<body>
+<script>
+
+  const featured = ['Deep Dish', 'Pepperoni', 'Hawaiian'];
+  const specialty = ['Meatzza', 'Spicy Mama', 'Margherita'];
+
+// 1 concat
+// const pizzas = featured.concat(specialty);
+// console.log(pizzas);
+
+// 2 adding to the array
+// let pizzas = [];
+// pizzas = pizzas.concat(featured);
+// pizzas.push('vegetarian');
+// pizzas = pizzas.concat(specialty)
+// console.log(pizzas);
+
+// 3 Spread with string (iterable)
+// ['daniel']
+// [...'daniel']
+
+// let pizzas = [...featured, ...specialty]
+    pizzas = [...featured, 'vegetarian', ...specialty]
+// console.log(pizzas);
+
+// 4 Copy an array without being destructive
+
+//4a refrencing an array overwrites it
+// const fridayPizzas = pizzas;
+//       fridayPizzas[0] = "Eggplant"
+// console.log(pizzas);
+
+// const fridayPizzas = [...pizzas]
+
+  // const deepDish = {
+  //   pizzaName: 'Deep Dish',
+  //   size: 'Medium',
+  //   ingredients: ['Marinara', 'Italian Sausage', 'Dough', 'Cheese']
+  // };
+
+</script>
+</body>
+</html>
