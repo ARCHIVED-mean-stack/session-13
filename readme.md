@@ -45,7 +45,7 @@ fetch(endpoint)
 
 Returns the complete array.
 
-We could...s
+We could try:
 
 ```js
 const cities = [];
@@ -70,7 +70,7 @@ We want everything to have its own item in the array.
 
 In the console:
 
-> cities.push(1,2,3,4)
+`> cities.push(1,2,3,4)`
 
 Let's use a spread operator.
 
